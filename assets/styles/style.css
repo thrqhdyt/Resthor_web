@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: white;
+  box-shadow: 0 4px 10px #fad4d4;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+li {
+  list-style: none;
+}
+
+nav > a {
+  color: #f47c7c;
+  text-decoration: none;
+  margin-left: 10%;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10%;
+}
+
+.nav-menu a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #f47c7c;
+  margin-right: 15px;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #f47c7c;
+}
+
+nav ul li.aktif {
+  border-bottom: 2px solid #f47c7c;
+}
+
+/* Navbar */
+
+/* Home */
+#home {
+  display: flex;
+  width: 80%;
+  height: 80vh;
+  margin: 50px auto 0 auto;
+  padding: 20px;
+}
+
+.home-title {
+  flex-basis: 50%;
+  margin-top: 80px;
+}
+
+.p1 {
+  color: #f47c7c;
+  font-size: 20px;
+}
+
+.p1 span {
+  color: #f47c7c;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.home-title h1 {
+  font-size: 40px;
+  color: #f47c7c;
+}
+
+.p2 {
+  color: #fad4d4;
+}
+
+.home-image {
+  flex-basis: 50%;
+  margin-top: 30px;
+}
+
+.home-image img {
+  width: 100%;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #f47c7c;
+  color: #f47c7c;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #f47c7c;
+  color: white;
+}
+
+/* about */
+#about {
+  display: flex;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-image {
+  flex-basis: 50%;
+  padding-left: 50px;
+}
+
+.about-image img {
+  width: 80%;
+}
+
+.about-p {
+  flex-basis: 50%;
+}
+
+.about-p h3 {
+  color: #f47c7c;
+  font-size: 34px;
+}
+
+.about-p p {
+  color: #f47c7c;
+  line-height: 30px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+}
+
+/* Services */
+#services {
+  margin: 70px auto;
+  padding: 20px;
+}
+
+#services h2 {
+  color: #f47c7c;
+  text-align: center;
+  font-size: 34px;
+}
+
+.section-card {
+  display: flex;
+  flex-grow: 1;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.card-services {
+  border: 2px solid #f47c7c;
+  padding: 25px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px #fad4d4;
+  transition: all 0.3s ease-in;
+}
+
+.card-services img {
+  width: 80px;
+}
+
+.card-services p {
+  font-size: 14px;
+}
+
+.card-services:hover {
+  background-color: #f47c7c;
+  color: white;
+  border: none;
+  transform: scale(1.05);
+}
+
+/* Menu */
+#menu {
+  background-color: #fff5f5;
+  padding: 20px;
+}
+
+#menu h2 {
+  color: #f47c7c;
+  font-size: 34px;
+  text-align: center;
+}
+
+.card-menu {
+  background-color: white;
+  border: 1px solid black;
+  margin: 20px auto;
+}
+
+.card-menu img {
+  width: 300px;
+  height: 200px;
+}
+
+.card-menu h4 {
+  color: #f47c7c;
+  font-size: 22px;
+  text-align: center;
+}
+
+.featured-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Kontak */
+#kontak {
+  display: flex;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.kontak-title {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 40px;
+}
+
+.kontak-title h2 {
+  font-size: 34px;
+  color: #f47c7c;
+}
+
+.kontak-title p {
+  font-size: 18px;
+  margin-left: 10px;
+  word-break: 5px;
+  letter-spacing: 2px;
+}
+
+.kontak-card {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 4px 10px #fad4d4;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.img-card {
+  border: 1px solid #f47c7c;
+  margin: 5px;
+}
+
+.kontak-form {
+  display: flex;
+  flex-basis: 50%;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 4px 10px #fad4d4;
+  border-radius: 10px;
+  margin: 80px 0 20px 20px;
+}
+
+.kontak-form img {
+  width: 200px;
+  margin-right: 20px;
+  object-fit: cover;
+  object-position: center;
+}
+
+form {
+  flex-basis: 50%;
+}
+
+input::placeholder {
+  color: #f47c7c;
+}
+
+form input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #f47c7c;
+  color: #f47c7c;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea {
+  border: none;
+  border-bottom: 1px solid #f47c7c;
+}
+textarea::placeholder {
+  padding: 10px;
+  color: #f47c7c;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.btn-input {
+  background-color: #f47c7c;
+  color: white;
+  padding: 7px 25px;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+aside {
+  margin: 40px auto;
+  width: 30%;
+  text-align: center;
+}
+
+.profile {
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 8px #fad4d4;
+  margin: 30px 30px 30px 0;
+  border-radius: 30px;
+}
+
+figure img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.profile section {
+  margin-left: 30px;
+}
+
+footer {
+  clear: both;
+  position: relative;
+  padding: 15px;
+  background-color: #fad4d4;
+  text-align: center;
+  color: #f47c7c;
+}
+
+/* Media Query Responsive */
+@media only screen and (max-width: 600px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 50px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px auto;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  #home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 170px;
+  }
+
+  .about-image {
+    margin-top: 30px;
+  }
+
+  /* .about-p {
+    margin-top: 100px;
+  } */
+
+  .section-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #kontak {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kontak-title img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .kontak-title p {
+    font-size: 12px;
+  }
+
+  .kontak-form {
+    margin: 20px;
+  }
+
+  .kontak-form img {
+    width: 0;
+  }
+
+  aside {
+    width: 90%;
+  }
+}

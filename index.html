@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ResThor</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#home" class="navbar-brand">ResThor</a>
+
+        <ul class="nav-menu">
+          <li class="nav-item home aktif"><a href="#home" class="nav-link">Beranda</a></li>
+          <li class="nav-item about"><a href="#about" class="nav-link">Tentang Kami</a></li>
+          <li class="nav-item services"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item menu"><a href="#menu" class="nav-link">Menu</a></li>
+          <li class="nav-item kontak"><a href="#kontak" class="nav-link">Kontak</a></li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="content">
+        <article id="home">
+          <div class="home-title">
+            <p class="p1">Welcome to <span>ResThor</span></p>
+            <h1>Salah satu Restoran terbaik di Indonesia</h1>
+            <p class="p2">Harga Murah, Rasa Enak</p>
+            <button class="btn">ORDER NOW</button>
+          </div>
+          <div class="home-image">
+            <img src="assets/img/image3.png" alt="image" />
+          </div>
+        </article>
+        <article id="about">
+          <div class="about-image">
+            <img src="assets/img/image2.jpg" alt="image" />
+          </div>
+          <div class="about-p">
+            <h3>ResThor</h3>
+            <p>Resthor merupakan salah satu restoran terbaik yang ada di Indonesia. Resthor lebih mengutamakan kenyamanan pelanggan, memiliki makanan yang enak dan harga yang murah.</p>
+            <button class="btn">Check Menu</button>
+          </div>
+        </article>
+
+        <article id="services">
+          <h2>Services</h2>
+          <div class="section-card">
+            <section class="card-services">
+              <img src="assets/img/services1.png" alt="services" />
+              <h4>Fast Food</h4>
+              <p>Menikmati makanan tanpa harus menunggu lama</p>
+            </section>
+            <section class="card-services">
+              <img src="assets/img/services2.png" alt="services" />
+              <h4>Delivery</h4>
+              <p>Layanan antar gratis, area layanan hingga 7 KM</p>
+            </section>
+            <section class="card-services">
+              <img src="assets/img/services3.png" alt="services" />
+              <h4>Free Wifi</h4>
+              <p>Pelanggan bisa menikmati layanan free wifi</p>
+            </section>
+          </div>
+        </article>
+
+        <article id="menu">
+          <h2>Spesial Menu</h2>
+          <div class="section-card">
+            <section class="card-menu">
+              <img src="assets/img/nasi-goreng.jpg" class="featured-img" alt="nasi-goreng" />
+              <h4>Nasi Goreng</h4>
+            </section>
+            <section class="card-menu">
+              <img src="assets/img/mie-goreng.jpg" class="featured-img" alt="mie-goreng" />
+              <h4>Mie Goreng</h4>
+            </section>
+            <section class="card-menu">
+              <img src="assets/img/sop-buntut.png" class="featured-img" alt="sop-buntut" />
+              <h4>Sop Buntut</h4>
+            </section>
+          </div>
+        </article>
+
+        <article id="kontak">
+          <div class="kontak-title">
+            <h2>Kontak</h2>
+            <div class="kontak-card">
+              <div class="img-card">
+                <img src="assets/img/phone.svg" alt="phone" />
+              </div>
+              <p>Phone : <br />+6282218772230</p>
+            </div>
+            <div class="kontak-card">
+              <img src="assets/img/emailme.svg" class="img-card" alt="phone" />
+              <p>Email : <br />thoriq1130@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="kontak-form">
+            <img src="assets/img/kontak.jpg" alt="kontak" />
+            <form>
+              <input type="text" id="fname" name="fname" placeholder="Nama" /><br />
+              <input type="email" id="email" name="email" placeholder="Email" /><br />
+              <textarea id="textarea" name="textarea" rows="4" cols="23" placeholder="Pesan"></textarea><br />
+              <input class="btn-input" type="submit" value="Kirim" />
+            </form>
+          </div>
+        </article>
+      </div>
+
+      <aside>
+        <article class="profile">
+          <header>
+            <h2>Profile Saya</h2>
+            <figure>
+              <img src="assets/img/profil.jpeg" />
+            </figure>
+          </header>
+          <section>
+            <table>
+              <tr>
+                <th>Nama</th>
+                <td>Thoriq Hidayat</td>
+              </tr>
+              <tr>
+                <th>Tanggal Lahir</th>
+                <td>30 November 2001</td>
+              </tr>
+              <tr>
+                <th>Status</th>
+                <td>Mahasiswa</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy;copyright 2022 by Thoriq Hidayat</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
